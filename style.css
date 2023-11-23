@@ -1,3 +1,101 @@
 * {
     box-sizing: border-box;
 }
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+.wrapper {
+    margin: 0;
+    font: normal 300 1.8rem Ubuntu, sans-serif;
+    color: rgb(36, 32, 32);
+    text-align: center;
+    background-color: #dae0e7;
+    padding: 10px;
+}
+
+.wrapper-header {
+    padding: 10px;
+    margin: 20px 45px;
+}
+
+.wrapper-section {
+    background-color: rgb(240, 237, 237);
+    padding: 20px;
+    margin: 40px 45px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid rgb(36, 32, 32);
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro__title {
+    text-align: left;
+}
+
+.intro__description {
+    max-width: 40%;
+    text-align: left;
+}
+
+.navigation {
+    display: flex;
+}
+
+.navigation__item {
+    list-style-type: none;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.navigation__link {
+    color: rgb(36, 32, 32);
+    text-decoration: none;
+}
+
+.navigation__link:hover {
+    color: rgb(118, 109, 109);
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+}
+
+.navigation__link:active,
+.navigation__link:visited {
+    color: rgb(118, 109, 109);
+    text-decoration: underline;
+}
+
+.section__title,
+.intro__title,
+.section__subtitle {
+    font-weight: 500;
+}
+
+.tribute__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.tribute__caption {
+    padding-top: 8px;
+    font-size: 1.6rem;
+}
+
+.paragraph {
+    padding: 0 50px;
+    text-align: justify;
+    text-indent: 20px;
+}

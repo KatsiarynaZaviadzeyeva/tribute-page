@@ -19,12 +19,14 @@ html {
 .wrapper-header {
     padding: 10px;
     margin: 20px 45px;
+    max-width: 1400px;
 }
 
 .wrapper-section {
     background-color: rgb(240, 237, 237);
     padding: 20px;
     margin: 40px 45px;
+    max-width: 1400px;
 }
 
 .header {
@@ -47,6 +49,7 @@ html {
 .intro__description {
     max-width: 40%;
     text-align: left;
+    font-style: oblique;
 }
 
 .navigation {
@@ -64,14 +67,17 @@ html {
     text-decoration: none;
 }
 
-.navigation__link:hover {
+.navigation__link:hover,
+.link:hover {
     color: rgb(118, 109, 109);
     font-weight: 400;
     transition: all 0.3s ease-in-out;
 }
 
 .navigation__link:active,
-.navigation__link:visited {
+.navigation__link:visited,
+link:active,
+link:visited {
     color: rgb(118, 109, 109);
     text-decoration: underline;
 }
@@ -98,4 +104,62 @@ html {
     padding: 0 50px;
     text-align: justify;
     text-indent: 20px;
+}
+
+.description {
+    color: rgb(118, 109, 109);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery__item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 350px;
+}
+
+.last {
+    content: "";
+    width: 350px;
+}
+
+
+
+.figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.gallery__image {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.replace-view {
+    object-position: 10% 3%;
+}
+
+.gallery__caption {
+    display: inline;
+    padding-top: 10px;
+    font-style: oblique;
+}
+
+.paragraph-discription {
+    padding: 0;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+.link {
+    color: rgb(36, 32, 32);
 }

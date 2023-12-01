@@ -29,12 +29,21 @@ html {
     max-width: 1400px;
 }
 
+.section__title {
+    padding-bottom: 20px;
+    color: rgb(118, 109, 109);
+}
+
+.section__subtitle {
+    color: rgb(118, 109, 109);
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    border: 1px solid rgb(36, 32, 32);
+    border: 3px solid rgb(118, 109, 109);
 }
 
 .intro {
@@ -44,12 +53,14 @@ html {
 
 .intro__title {
     text-align: left;
+    color: rgb(118, 109, 109);
 }
 
 .intro__description {
     max-width: 40%;
     text-align: left;
     font-style: oblique;
+    color: rgb(118, 109, 109);
 }
 
 .navigation {
@@ -63,13 +74,12 @@ html {
 }
 
 .navigation__link {
-    color: rgb(36, 32, 32);
     text-decoration: none;
+    color: rgb(118, 109, 109);
 }
 
 .navigation__link:hover,
 .link:hover {
-    color: rgb(118, 109, 109);
     font-weight: 400;
     transition: all 0.3s ease-in-out;
 }
@@ -107,7 +117,7 @@ link:visited {
 }
 
 .description {
-    color: rgb(118, 109, 109);
+    color: rgb(218, 165, 32);
 }
 
 .gallery {
@@ -121,6 +131,7 @@ link:visited {
     flex-direction: column;
     flex-wrap: wrap;
     max-width: 350px;
+    margin-bottom: 30px;
 }
 
 .last {
@@ -158,8 +169,31 @@ link:visited {
     padding: 0;
     text-align: justify;
     text-indent: 20px;
+
 }
 
 .link {
     color: rgb(36, 32, 32);
+}
+
+.paragraph-quotes {
+    color: rgb(218, 165, 32);
+    font-style: oblique;
+    padding-bottom: 15px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__link:hover .link-path{
+fill:rgb(218, 165, 32);
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 50px;
 }
